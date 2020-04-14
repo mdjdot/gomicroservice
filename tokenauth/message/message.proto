@@ -1,0 +1,16 @@
+syntax = "proto3";
+package message;
+
+message RequestArgs{
+    float Arg1 = 1;
+    float Arg2 = 2;
+}
+
+message ResponseResult{
+    float Result = 1;
+    int32 code = 2;
+    string msg = 3;
+}
+service MethService {
+    rpc AddMethod (RequestArgs) returns (ResponseResult);
+}

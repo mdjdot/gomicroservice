@@ -1,0 +1,5 @@
+syntax="proto3";
+enum Man{
+    male=0;
+    female=1;
+}
